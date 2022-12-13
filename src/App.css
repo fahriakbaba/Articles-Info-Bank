@@ -11,6 +11,8 @@
   --navbarColor: #0A0A23;
   --textWhite: white;
   --darkRed: darkred;
+  --textGray: grey;
+  --textGreen: #4D8055;
 }
 
 body {
@@ -28,6 +30,9 @@ body {
   height: 70px;
   background-color: var(--navbarColor);
   color: var(--textWhite);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .header .logo {
@@ -64,3 +69,86 @@ body {
 .header nav ul li .link:hover {
   border-bottom: 1px solid var(--textWhite);
 }
+
+/* section CSS*/
+.home {
+  margin: 2rem auto;
+  width: 30%;
+}
+
+.home article {
+  box-shadow: 1px 1px 2px var(--textGray);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin: 20px;
+  line-height: 1.5rem;
+}
+
+.home article:hover {
+  box-shadow: 2px 2px 8px var(--textGray);
+}
+
+.home article h3 {
+  font-size: 1.1rem;
+  font-style: 2px;  
+}
+
+.home article .author {
+  color: var(--textGreen);
+}
+
+.home article p {
+  color: var(--textGray);
+  letter-spacing: .1px;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.home article button {
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: var(--darkRed);
+  outline: none;
+  border: 2px solid var(--darkRed);
+  transition: all .7s;
+}
+
+.home article button:hover {
+  background-color: var(--textWhite);
+  border: 2px solid var(--darkRed);
+}
+
+.home article button .home-btn {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--textWhite);
+  transition: all .7s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.home article button:hover .home-btn {
+  color: var(--darkRed);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
