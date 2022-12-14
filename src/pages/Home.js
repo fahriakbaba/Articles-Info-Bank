@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 function Home({data}) {
-  console.log("home page => data: ", data);
+   
   return (
     <section className="home">
       {
