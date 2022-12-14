@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { jsPDF } from "jspdf";
+import { GrView } from 'react-icons/gr'
 
 function Article({ data }) {
   const { articleID } = useParams()
@@ -21,10 +22,14 @@ function Article({ data }) {
       <span>{findItem.author}</span>
       <div>
         <img src={findItem.url} alt="articleImage" />
+        <p dangerouslySetInnerHTML={{ __html: findItem.body }}></p>
       </div>
-      <button onClick={createPDF}>Create PDF</button>
+      {/* react-icon */}
+      <button onClick={createPDF} className="create-btn">Create PDF</button>
+      <span><GrView /> {findItem.views}</span>
     </section>
   )
 }
 
 export default Article;
+
