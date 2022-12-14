@@ -158,7 +158,8 @@ section {
 .article img {
   width: 350px;
   float: left;
-  margin-right: 10px;
+  margin-right: 16px;
+  margin-bottom: 8px;
   border-radius: 5px;
 }
 
@@ -183,6 +184,11 @@ section {
 .article .create-btn:hover {
   color: var(--darkRed);
   background-color: var(--textWhite);
+}
+
+.article .create-btn + span {
+  color: var(--navbarColor);
+  font-size: .8rem;
 }
 
 /* profile CSS*/

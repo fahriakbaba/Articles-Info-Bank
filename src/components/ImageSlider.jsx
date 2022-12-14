@@ -46,12 +46,6 @@ const dotStyle = {
   fontSize: "20px",
 };
 
-const stylesHeading = {
-  fontSize: "1.6rem",
-  marginBottom: "12px",
-  letterSpacing: ".6px",
-}
-
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
@@ -74,7 +68,6 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div style={sliderStyles}>
-      <h2 style={stylesHeading}>The most views articles</h2>
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰

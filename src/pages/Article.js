@@ -14,8 +14,6 @@ function Article({ data }) {
     doc.save("a4.pdf");
   }
 
-
-
   return (
     <section className='article'>
       <h4>{findItem.title}</h4>
