@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { jsPDF } from "jspdf";
-import { GrView } from 'react-icons/gr'
+import { GrView } from 'react-icons/gr';
+import { BsFillFilePdfFill } from 'react-icons/bs';
 
 function Article({ data }) {
   const { articleID } = useParams()
@@ -10,8 +11,16 @@ function Article({ data }) {
   const createPDF = () => {
     // Default export is a4 paper, portrait, using millimeters for units
     const doc = new jsPDF();
+
     doc.text("Hello world!", 10, 10);
     doc.save("a4.pdf");
+  }
+
+  const btn = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "5px"
   }
 
   return (
@@ -23,7 +32,7 @@ function Article({ data }) {
         <p dangerouslySetInnerHTML={{ __html: findItem.body }}></p>
       </div>
       {/* react-icon */}
-      <button onClick={createPDF} className="create-btn">Create PDF</button>
+      <button onClick={createPDF} className="create-btn" style={btn}>PDF <BsFillFilePdfFill /></button>
       <span><GrView /> {findItem.views}</span>
     </section>
   )
