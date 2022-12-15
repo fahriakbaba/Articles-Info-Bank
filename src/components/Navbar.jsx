@@ -20,9 +20,6 @@ function Navbar({ lang, setLang }) {
               About
             </Link>
           </li>
-          <li>
-            <Link className="link">Contact</Link>
-          </li>
         </ul>
         <select
           id="language"

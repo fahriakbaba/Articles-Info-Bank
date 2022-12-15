@@ -223,8 +223,23 @@ section {
   text-indent: 10px;
 }
 
+.about {
+  padding: 1rem 2rem;
+}
 
+.about h3 {
+  font-size: 2rem;
+  color: var(--textGray);
+  text-align: center;
+  margin-bottom: 12px;
+}
 
+.about p {
+  text-align: justify;
+  text-indent: 16px;
+  line-height: 1.5rem;
+}
+ 
 
 
 
