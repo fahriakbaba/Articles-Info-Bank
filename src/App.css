@@ -89,8 +89,7 @@ section {
 }
 
 .home article h3 {
-  font-size: 1.1rem;
-  font-style: 2px;  
+  font-size: 1.1rem; 
 }
 
 .home article .author {
@@ -204,7 +203,6 @@ section {
   font-size: 2rem;
   color: var(--textGray);
   margin-bottom: 12px;
-  font-family: 'Brush Script MT', cursive;
   letter-spacing: 1px;
 }
 

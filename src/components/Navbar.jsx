@@ -12,12 +12,12 @@ function Navbar({ lang, setLang }) {
         <ul>
           <li>
             <Link to="/" className="link">
-              Home
+              {lang==="en" ? "Home" : "Ana Sayfa"}
             </Link>
           </li>
           <li>
             <Link to="about" className="link">
-              About
+              {lang==="en" ? "About" : "Hakkımızda"}
             </Link>
           </li>
         </ul>

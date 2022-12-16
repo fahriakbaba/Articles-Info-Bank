@@ -10,11 +10,11 @@ import database from "./data";
 
 function App() {
   const [lang, setLang] = React.useState(JSON.parse(localStorage.getItem("lang")) || "en");
-  const [data, setData] = React.useState(database[lang]);
+  const [data, setData] = React.useState(database);
 
   React.useEffect( () => {
     localStorage.setItem("lang", JSON.stringify(lang));
-    setData(database[lang]);
+    setData(database);
     
   }, [lang]);
 
